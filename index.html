@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <title>Travelix-Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../Travelix/assets/css/styles.css">
+    <script>
+            function toggleMenu() {
+                var x = document.getElementById("TopNav");
+                if (x.className === "nav-menu") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav-menu";
+                }
+            }
+   
+        </script>
+</head>
+<body>
+  <nav class="navigation" id="Header" >
+     <div class="logo"><img src="../../Travelix/assets/images/logo.png"  alt="travelix logo"/>
+        <span class="logotext">Travelix</span></div> 
+      <ul class="nav-menu" id="TopNav"> 
+        <li class="nav-menu-item">
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </li>
+        <li class="nav-menu-item">
+            <a href="#home">
+                Home
+            </a>
+        </li>
+        <li class="nav-menu-item">
+             <a href="#about">About us</a>    
+        </li>
+        <li class="nav-menu-item">
+            <a href="#offers"> Offers </a>               
+        </li>
+        <li class="nav-menu-item">
+            <a href="#news"> News </a>           
+        </li>
+        <li class="nav-menu-item">
+            <a href="#contact">Contact  </a>                 
+        </li>
+    
+        <li class="nav-menu-item search"><img src="../../Travelix/assets/images/search.png" alt="search"/></li>
+    </ul>
+    </nav>  
+   <article class="carouselbanner">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators carousel-indicators-numbers">
+                  <li data-target="#demo" data-slide-to="0" class="active numberind">1</li>
+                  <li data-target="#demo" data-slide-to="1" class="numberind">2</li>
+                  <li data-target="#demo" data-slide-to="2" class="numberind">3</li>
+                </ul>
+                <div class="carousel-inner text-center">
+                  <div class="carousel-item active">
+                    <img src="../../Travelix/assets/images/home_slider.jpg" alt="Home page Image">
+                    <div class="carousel-caption ">
+                        <div class="captions">
+                         <p class="discover">Discover</p>
+                         <p class="beyondthemountain">the world</p>
+                         <button class="cta gradient"><b>Explore Now ... </b> </button>
+                        </div>
+                    </div>   
+                  </div>
+                  <div class="carousel-item text-center">
+                    <img src="../../Travelix/assets/images/home_slider.jpg" alt="Home page Image">
+                    <div class="carousel-caption">
+                            <div class="captions">
+                            <p class="discover">Discover</p>
+                            <p class="beyondthemountain">the world</p>
+                            <button class="cta gradient"> Explore Now ... </button>  
+                            </div>  
+                    </div>   
+                  </div>
+                  <div class="carousel-item text-center">
+                    <img src="../../Travelix/assets/images/home_slider.jpg" alt="Home page Image">
+                    <div class="carousel-caption">
+                            <div class="captions">
+                            <p class="discover">Discover</p>
+                            <p class="beyondthemountain">the world</p>
+                            <button class="cta gradient"> Explore Now ... </button>
+                            </div>
+                    </div>   
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+              
+   </article> 
+   <section class="tabsgrad gradient">
+      <div class="container ">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#hotels"><img src="../../Travelix/assets/images/suitcase.png" alt="hotels"/>HOTELS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#carrentals"><img src="../../Travelix/assets/images/bus.png" alt="Car Rentas"/>CAR RENTALS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#flights"><img src="../../Travelix/assets/images/departure.png" alt="Flights"/>FLIGHTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#trips"><img src="../../Travelix/assets/images/island.png" alt="Trips"/>TRIPS</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link" data-toggle="tab" href="#cruises"><img src="../../Travelix/assets/images/cruise.png" alt="Cruises"/>CRUISES</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link" data-toggle="tab" href="#activities"><img src="../../Travelix/assets/images/diving.png" alt="Activities"/>ACTIVITIES</a>
+          </li>
+        </ul>
+      
+        <!-- Tab panes -->
+        <div class="tab-content " >
+          <div id="hotels" class="container tab-pane active"><br>
+            <h3>HOTELS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div id="carrentals" class="container tab-pane fade"><br>
+            <h3>CAR RENTALS</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div id="flights" class="container tab-pane fade"><br>
+              <div >
+                  <form class="flightflex">
+                       <ul> <li> DESTINATION </li>
+                        <li>  <input type="text"  name="message"  size="30" ></li></ul>
+                        <ul> <li> CHECK IN </li>
+                        <li>  <input type="text" name="message"  size="10"  placeholder="YYYY-MM-DD"></li></ul>
+                        <ul> <li> CHECK OUT </li>
+                        <li>  <input type="text"  name="message"  size="10" placeholder="YYYY-MM-DD"></li></ul>
+                        <ul> <li> ADULTS </li>
+                        <li> <select id="adults">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="0">0</option>
+                              </select></li></ul>
+                        <ul> <li> CHILDREN </li>
+                            <li> <select id="children">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="0">0</option>
+                                  </select></li>
+                    </ul>
+                        <ul> <li> <input type="submit" class="submit msg" value="SEARCH ..."></li></ul>
+                  </form>
+              </div>
+          </div>
+          <div id="trips" class="container tab-pane fade"><br>
+              <h3>TRIPS</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div id="cruises" class="container tab-pane fade"><br>
+            <h3>CRUISES</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+         </div>
+         <div id="activities" class="container tab-pane fade"><br>
+            <h3>Activities</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         </div>
+        </div>
+      </div>
+    </section>
+    <article  class="tourpack">
+       <div class="besttours">
+         <h2> We have the best Tours </h2>
+         <p class="greycol">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+       </div>
+       <div class="multicolumn">
+       <section class="package intro1">
+           <p class="btntime">May 25th-june 01st</p>
+           <div class="placeflex">
+           <p class="city">Mauritious</p>
+           <p class="small">From $1450</p>
+           <div class="stars"><i class="fa fa-star lite1"></i> <i class="fa fa-star lite2"></i><i class="fa fa-star lite3"></i><i class="fa fa-star lite4"></i><i class="fa fa-star"></i></div>
+            </div>
+           <button class="seemore gradient">SEE MORE...</button>
+       </section>
+       <section class="package intro2">
+            <p class="btntime">May 25th-june 01st</p>
+            <div class="placeflex">
+            <p class="city">Greece</p>
+            <p class="small">From $1450</p> 
+            <div class="stars"><i class="fa fa-star lite1"></i> <i class="fa fa-star lite2"></i><i class="fa fa-star lite3"></i><i class="fa fa-star lite4"></i><i class="fa fa-star"></i></div>
+            </div>
+            <button class="seemore gradient">SEE MORE...</button>
+        </section>
+        <section class="package intro3">
+            <p class="btntime">May 25th-june 01st</p>
+            <div class="placeflex">
+            <p class="city">Scotland</p>
+            <p class="small">From $1450</p>
+            <div class="stars"><i class="fa fa-star lite1"></i> <i class="fa fa-star lite2"></i><i class="fa fa-star lite3"></i><i class="fa fa-star lite4"></i><i class="fa fa-star"></i></div>
+            </div>
+            <button class="seemore gradient">SEE MORE...</button>
+        </section>
+        </div>
+    </article>
+    <article class="deluxepackage">
+        <div class="deluxeimg">
+            <div class="deluxedetails">
+                <h2>MALDIVES DELUXE PACKAGE</h2>
+                <div class="stars"><i class="fa fa-star lite1"></i> <i class="fa fa-star lite2"></i><i class="fa fa-star lite3"></i><i class="fa fa-star lite4"></i><i class="fa fa-star"></i></div>
+                <p class="greycol">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="seemore gradient">BOOK NOW...</button>
+            </div>
+        </div>
+    </article>
+    <article class="bestoffer" >
+        <h2>THE BEST OFFERS WITH ROOMS</h2>
+        <div class="grid-container">
+         
+            <div class="place  grid-item">
+            <img src="../../Travelix/assets/images/offer_1.jpg" alt="grand castle"/>
+            <p class="placename">GRAND CASTLE </p>
+            </div>
+            <div class="roomdetails  grid-item">
+                <p class="price bottommargin">$70<span class="pricetxt greycol">per night</span></p>
+                <div class="stars"><i class="fa fa-star lite1"></i> <i class="fa fa-star lite2"></i><i class="fa fa-star lite3"></i><i class="fa fa-star lite4"></i><i class="fa fa-star white"></i></div>
+                <p class="gaptentop greycol">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <ul class="icons marginincr">
+                    <li class="list-item"><img src="../../Travelix/assets/images/post.png" alt="post"/></li>
+                    <li class="list-item"><img src="../../Travelix/assets/images/compass.png" alt="compass"/></li>
+                    <li class="list-item"><img src="../../Travelix/assets/images/bicycle.png" alt="bycycle"/></li>
+                    <li class="list-item"><img src="../../Travelix/assets/images/sailboat.png" alt="sailboat"/></li>
+                </ul>
+                <a class="gaptentop"><b>READ MORE</b></a>
+            </div>
+         
+                <div class="place  grid-item">
+                <img src="../../Travelix/assets/images/offer_2.jpg" alt="TURKEY HILLS"/>
+                <p class="placename">TURKEY HILLS</p>
+                </div>
+                <div class="roomdetails  grid-item">
+                    <p class="price bottommargin">$50<span class="pricetxt greycol">per night</span></p>
+                    <div class="stars"><i class="fa fa-star lite1"></i> <i class="fa fa-star lite2"></i><i class="fa fa-star lite3"></i><i class="fa fa-star lite4"></i><i class="fa fa-star white"></i></div>
+                    <p class="gaptentop greycol">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul class="icons marginincr">
+                        <li class="list-item"><img src="../../Travelix/assets/images/post.png" alt="post"/></li>
+                        <li class="list-item"><img src="../../Travelix/assets/images/compass.png" alt="compass"/></li>
+                        <li class="list-item"><img src="../../Travelix/assets/images/bicycle.png" alt="bycycle"/></li>
+                        <li class="list-item"><img src="../../Travelix/assets/images/sailboat.png" alt="sailboat"/></li>
+                    </ul>
+                    <a class="gaptentop"><b>READ MORE</b></a>
+                </div>
+          
+                    <div class="place  grid-item">
+                    <img src="../../Travelix/assets/images/offer_3.jpg" alt="ISLAND DREAM"/>
+                    <p class="placename">ISLAND DREAM</p>
+                    </div>
+                    <div class="roomdetails  grid-item">
+                        <p class="price bottommargin">$90<span class="pricetxt greycol">per night</span></p>
+                        <div class="stars"><i class="fa fa-star lite1"></i> <i class="fa fa-star lite2"></i><i class="fa fa-star lite3"></i><i class="fa fa-star lite4"></i><i class="fa fa-star white"></i></div>
+                        <p class="gaptentop greycol">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul class="icons marginincr">
+                            <li class="list-item"><img src="../../Travelix/assets/images/post.png" alt="post"/></li>
+                            <li class="list-item"><img src="../../Travelix/assets/images/compass.png" alt="compass"/></li>
+                            <li class="list-item"><img src="../../Travelix/assets/images/bicycle.png" alt="bycycle"/></li>
+                            <li class="list-item"><img src="../../Travelix/assets/images/sailboat.png" alt="sailboat"/></li>
+                        </ul>
+                        <a class="gaptentop"><b>READ MORE</b></a>
+                    </div>
+                
+                        <div class="place  grid-item">
+                        <img src="../../Travelix/assets/images/offer_4.jpg" alt="TRAVEL LIGHT"/>
+                        <p class="placename">TRAVEL LIGHT</p>
+                        </div>
+                        <div class="roomdetails  grid-item">
+                            <p class="price bottommargin">$30<span class="pricetxt greycol">per night</span></p>
+                            <div class="stars"><i class="fa fa-star lite1"></i> <i class="fa fa-star lite2"></i><i class="fa fa-star lite3"></i><i class="fa fa-star lite4"></i><i class="fa fa-star"></i></div>
+                            <p class="gaptentop">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <ul class="icons marginincr">
+                                <li class="list-item"><img src="../../Travelix/assets/images/post.png" alt="post"/></li>
+                                <li class="list-item"><img src="../../Travelix/assets/images/compass.png" alt="compass"/></li>
+                                <li class="list-item"><img src="../../Travelix/assets/images/bicycle.png" alt="bycycle"/></li>
+                                <li class="list-item"><img src="../../Travelix/assets/images/sailboat.png" alt="sailboat"/></li>
+                            </ul>
+                            
+                            <a class="gaptentop"><b>READ MORE</b></a>
+                        </div>
+              
+            </div>    
+    </article>
+    <article class="review">     
+        <h2>WHAT OUR CLIENTS SAY ABOUT US</h2>
+        <div class="flex-container">
+        <div class="image1"><span class="circle1"><img src="../../Travelix/assets/images/milestone_4.png" alt="milestone"/></span>
+            <p class="revname"><b>CARLA SMITH </b><span>May 24, 2017</span></p>
+           <div class="revtext"><h3>"Best holiday ever"</h3>
+           <p> Nullum crimen, nulla poena sine lege: a historical and theoretical examination Chapter 3. Article 7 ECHR: the principle nullum crimen, nulla poena </p>
+            </div> 
+        </div>
+        <div class="image2 "><span class="circle1"><img src="../../Travelix/assets/images/island.png" alt="island"/></span>
+                <p  class="revname"><b>CARLA SMITH </b><span>May 24, 2017</span></p>
+                <div class="revtext"> <h3>"Best holiday ever"</h3>
+                <p> Nullum crimen, nulla poena sine lege: a historical and theoretical examination  Chapter 3. Article 7 ECHR: the principle nullum crimen, nulla poena </p>
+                </div>
+            </div>
+        <div class="image3"><span class="circle1"><img src="../../Travelix/assets/images/cruise.png" alt="cruise"/></span>
+                <p  class="revname"><b>CARLA SMITH </b><span>May 24, 2017</span></p>
+                <div class="revtext"><h3>"Best holiday ever"</h3>
+                <p> Nullum crimen, nulla poena sine lege: a historical and theoretical examination  Chapter 3. Article 7 ECHR: the principle nullum crimen, nulla poena </p>
+                </div>
+        </div>
+        </div>
+    </article>
+    <article class="trending"> 
+        <h2>TRENDING NOW</h2>
+        <div class="trendflex">
+        <div class="group">
+            <div class="iconimg">
+            <img src="../../Travelix/assets/images/trend_1.png" alt="trend"/>
+            </div>
+            <div class="icontxt">
+                <p class="bottommargin"><b>GRAND HOTEL</b></p>
+                <span class="orange">From $182</span>
+                <p class="gaptentop greycol">MADRID, SPAIN</p>
+            </div>
+       </div>
+       <div class="group">
+            <div class="iconimg">
+            <img src="../../Travelix/assets/images/trend_2.png" alt="trend"/>
+            </div>
+            <div class="icontxt">
+                <p class="bottommargin"><b>QUEEN HOTEL</b></p>
+                <span class="orange">From $182</span>
+                <p class="gaptentop greycol">MADRID, SPAIN</p>
+            </div>
+        </div>
+            <div class="group">
+                    <div class="iconimg">
+                    <img src="../../Travelix/assets/images/trend_3.png" alt="trend"/>
+                    </div>
+                   <div class="icontxt">
+                    <p class="bottommargin"><b>MARS HOTEL</b></p>
+                    <span class="orange">From $182</span>
+                    <p class="gaptentop greycol">MADRID, SPAIN</p>
+                   </div>
+            </div>
+            <div class="group">
+                <div class="iconimg">
+                     <img src="../../Travelix/assets/images/trend_4.png" alt="trend"/>
+                </div>
+                <div class="icontxt">
+                     <p class="bottommargin"><b>GRAND HOTEL</b></p>
+                     <span class="orange">From $182</span>
+                    <p class="gaptentop greycol">MADRID, SPAIN</p>
+                </div>
+            </div>     
+                <div class="group">
+                     <div class="iconimg">
+                     <img src="../../Travelix/assets/images/trend_5.png" alt="trend"/>
+                     </div>
+                     <div class="icontxt">
+                      <p class="bottommargin"><b>GRAND HOTEL</b></p>
+                      <span class="orange">From $182</span>
+                      <p class="gaptentop greycol">MADRID, SPAIN</p>
+                    </div>
+                </div>
+                <div class="group">
+                        <div class="iconimg">
+                        <img src="../../Travelix/assets/images/trend_6.png" alt="trend"/>
+                        </div>
+                        <div class="icontxt">
+                         <p class="bottommargin"><b>GRAND HOTEL</b></p>
+                        <span class="orange">From $182</span>
+                         <p class="gaptentop greycol">MADRID, SPAIN</p>
+                       </div>
+                   </div> 
+                   <div class="group">
+                        <div class="iconimg">
+                        <img src="../../Travelix/assets/images/trend_7.png" alt="trend"/>
+                        </div>
+                        <div class="icontxt">
+                         <p class="bottommargin"><b>GRAND HOTEL</b></p>
+                         <span class="orange">From $182</span>
+                         <p class="gaptentop greycol">MADRID, SPAIN</p>
+                       </div>
+                   </div>   
+                   <div class="group">
+                        <div class="iconimg">
+                        <img src="../../Travelix/assets/images/trend_8.png" alt="trend"/>
+                        </div>
+                        <div class="icontxt">
+                         <p class="bottommargin"><b>GRAND HOTEL</b></p>
+                         <span class="orange">From $182</span>
+                         <p class="gaptentop greycol">MADRID, SPAIN</p>
+                       </div>
+                   </div> 
+                </div>                              
+    </article>
+    <article>
+        <div class="formimage">
+        <form action="submit" class="travelform" >
+            <h2>GET IN TOUCH</h2>
+            <ul  class="formlist">
+            <div class="formflex"> <ul class="first"> <li ><span class="name">Name:  </span></li> 
+                <li> <input type="text"  class="text-line" name="firstname" size="20"></ul>
+                    <ul class="second">
+                            <li >      <span class="email"> Email: </span></li> 
+                    <li >
+                    <input type="email" class="text-line" name="email" size="20">
+                    </li>
+                </ul> </div>
+            <li>Subject:</li>
+            <li> <input type="text" class="text-line" name="subject" size="30" ></li>
+            <li> Message:</li>
+            <li>  <input type="text" class="text-line" name="message"  size="30" ></li>
+            <li></li>
+            <li><input type="submit" class="submit msg" value="SEND MESSAGE..."></li>
+        
+        </ul>
+        </form>
+        </div>
+    </article>
+    <article class="blog ">
+        <div class="bcontent">
+    <div class="div1">
+       <div class="logo"><img src="../../Travelix/assets/images/logo.png"  alt="travelix logo"/><span class="logotext">Travelix</span></div> 
+       <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+       </p>
+       <ul class="socialicon">
+           <li class="circ"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+           <li class="circ"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+           <li class="circ"><i class="fa fa-pinterest" aria-hidden="true"></i> </li>
+           <li class="circ"><i class="fa fa-behance" aria-hidden="true"></i></li>
+           <li class="circ"><i class="fa fa-dribbble" aria-hidden="true"></i></li>
+       </ul>
+    </div>   
+   <div class="div2">
+        <h3>BLOG POSTS</h3>
+       <div class="flexblog">
+       
+       <div class="blogflex">
+       <div> <img src="../../Travelix/assets/images/footer_blog_1.jpg" alt="blog image" /></div><div>Travel with us this year<br/><span class="orange">Nov 29,2020</span></div>
+    </div> 
+    <div class="blogflex">
+       <div><img src="../../Travelix/assets/images/footer_blog_2.jpg" alt="blog image" /></div><div>New destinations for you<br/><span class="orange">Nov 29,2020</span></div>
+    </div> 
+    <div class="blogflex">
+       <div><img src="../../Travelix/assets/images/footer_blog_3.jpg" alt="blog image" /></div><div>Travel with us this year<br/><span class="orange">Nov 29,2020</span></div>
+    </div>
+</div>
+   </div>
+   <div class="div3">
+       <h3>Tags</h3>
+       <div class="box">
+                <span class="one">design</span><span class="one">fashion</span>
+               <span class="two">music</span><span class="two">video</span>
+                 <span class="three">party</span><span class="three">photograph</span>
+                <span class="four">adventure</span><span class="four">travel</span>
+       </div>
+   </div>
+   <div class="div4">
+       <h3>CONTACT INFO</h3>
+       <p><img src="../../Travelix/assets/images/" alt=""/> 4127 Raoul wallenber 45b-c Gibraltar</p>
+       <p><img src="../../Travelix/assets/images/" alt=""/>2556-806-8613</p>
+       <p><img src="../../Travelix/assets/images/" alt=""/>contactme@gmail.com</p>
+       <p><img src="../../Travelix/assets/images/" alt=""/>www.colorlib.com</p>
+   </div>
+</div>
+</article>
+<footer class="footercolor ">
+    <div class="footercopy footcolor">
+    <p>copyright &copy; 2020 All rights reserved!<br/>This template is made with <i class="fa fa-heart"></i>
+        by <span class="blue">Colorlib</span></p>
+    </div>
+    <ul class="footernav footcolor"> 
+            
+            <li class="nav-menu-item">
+                <a href="#home">
+                    Home
+                </a>
+            </li>
+            <li class="nav-menu-item">
+                 <a href="#about">About us</a>    
+            </li>
+            <li class="nav-menu-item">
+                <a href="#offers"> Offers </a>               
+            </li>
+            <li class="nav-menu-item">
+                <a href="#news"> News </a>           
+            </li>
+            <li class="nav-menu-item">
+                <a href="#contact">Contact  </a>                 
+            </li>
+        </ul>
+</footer>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
